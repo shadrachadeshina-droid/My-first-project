@@ -35,7 +35,16 @@
     <h1>Hello, world! 👋</h1>
     <p>Welcome to my first website.</p>
     <p>I'm learning to code on GitHub!</p>
-    <button>My first button</button>
+    <button onclick="showMessage()">My first button</button>
+
+<p id="message"></p>
+
+<script>
+  function showMessage() {
+    document.getElementById("message").textContent =
+      "🔥 You just made your first interactive website!";
+  }
+</script>
   </div>
 </body>
 </html>
